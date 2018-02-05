@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mission_To_Mars</title>
+
+    <!-- List of BootStrap and CSS Style Sheets -->
+    <!-- Bootsrap using <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
+
+</head>
+<body>
+    <header>
+        <div class="text-center">
+            <h1>Mission to Mars</h1>
+            <hr>
+            <a class="btn btn-primary" href="/scrape" role="button">Scrape</a>
+            <hr>
+        </div>
+    </header>
+    <div class="container" style="width:100%">
+        <div class="row">
+            <div class="col-md-12" >
+                <div class="first-panel">
+                <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h2>Mars News</h2>
+                </div>
+                <div class="panel-body">
+                    <h3 class="news_title">{{ news_title }}</h3>
+                    <p class="news_text">{{ news_text }}</p>
+                </div>        
+                </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-8" >
+                <div class="first-panel">
+                <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h2>Featured Mars Image</h2>
+                </div>
+                <div class="panel-body">
+                    <img class="featured" src= {{ featured_image }}>
+                </div>        
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="first-panel">
+                <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h2>Current Weather on Mars</h2>
+                </div>
+                <div class="panel-body">
+                    <p>{{ weather }}</p>
+                </div>        
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="table-panel">
+                <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h2>Mars Facts</h2>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                    <thead>
+                    <tr>
+                    <th>Description</th>
+                    <th>Value</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>{{ description_1 }}</td>
+                    <td>{{ value_1 }}</td>
+                    </tr>
+                    <tr>
+                    <td>{{ description_2 }}</td>
+                    <td>{{ value_2 }}</td>
+                    </tr>
+                    <tr>
+                    <td>{{ description_3 }}</td>
+                    <td>{{ value_3 }}</td>
+                    </tr>
+                    <tr>
+                    <td>{{ description_4 }}</td>
+                    <td>{{ value_4 }}</td>
+                    </tr>
+                    <tr>
+                    <td>{{ description_5 }}</td>
+                    <td>{{ value_5 }}</td>
+                    </tr>
+                    <tr>
+                    <td>{{ description_6 }}</td>
+                    <td>{{ value_6 }}</td>
+                    </tr>
+                    <tr>
+                    <td>{{ description_7 }}</td>
+                    <td>{{ value_7 }}</td>
+                    </tr>
+                    <tr>
+                    <td>{{ description_8 }}</td>
+                    <td>{{ value_8 }}</td>
+                    </tr>
+                    <tr>
+                    <td>{{ description_9 }}</td>
+                    <td>{{ value_9 }}</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>        
+                </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-8 col-sm-offset-2" >
+                <div class="last-panel">
+                <div class="panel panel-info">
+                <div class="panel-heading text-center">
+                    <h2 class="mars_hemi">Mars Hemispheres</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="row align-center">
+                        <img class="hemi-image thumbnail" src= {{ image_1_link }}>
+                        <img class="hemi-image thumbnail right" src= {{ image_2_link }} >
+                    </div>
+                    <div class="row">
+                        <img class="hemi-image thumbnail" src= {{ image_3_link }} >
+                        <img class="hemi-image thumbnail right" src= {{ image_4_link }} >
+                    </div>
+                </div>        
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
